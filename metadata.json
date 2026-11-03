@@ -1,0 +1,6 @@
+{
+  "name": "Pawfect",
+  "description": "Connecting every paw to its perfect hands — giving marketplace for animal shelters in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

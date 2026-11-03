@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-cream: #FFF8F6;
+    --color-blush-surface: #FDEBF0;
+    --color-soft-pink: #F4A8C3;
+    --color-rose: #E27AA1;
+    --color-dark-pink: #B0285F;
+    --color-deep: #7E1B43;
+    --color-text-main: #3A2530;
+    --color-text-muted: #8A6B79;
+
+    --color-success: #3F7A59;
+    --color-success-bg: #EAF5EF;
+    --color-warning: #B86B1E;
+    --color-warning-bg: #FEF5EA;
+    --color-danger: #A82944;
+    --color-danger-bg: #FDF0F2;
+
+    --shadow-paw-sm: 0 2px 8px -2px rgba(176, 40, 95, 0.08), 0 1px 4px -1px rgba(176, 40, 95, 0.04);
+    --shadow-paw-md: 0 8px 24px -4px rgba(176, 40, 95, 0.12), 0 3px 8px -2px rgba(176, 40, 95, 0.06);
+    --shadow-paw-lg: 0 16px 36px -6px rgba(176, 40, 95, 0.16), 0 6px 12px -3px rgba(176, 40, 95, 0.08);
+  }
+
+  body {
+    background-color: var(--color-bg-cream);
+    color: var(--color-text-main);
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom utility classes and transitions */
+.shadow-paw-sm {
+  box-shadow: var(--shadow-paw-sm);
+}
+
+.shadow-paw-md {
+  box-shadow: var(--shadow-paw-md);
+}
+
+.shadow-paw-lg {
+  box-shadow: var(--shadow-paw-lg);
+}
+
+/* Accessible focus outline */
+*:focus-visible {
+  outline: 2px solid var(--color-dark-pink);
+  outline-offset: 2px;
+}
+
+/* Smooth motion constraints */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
